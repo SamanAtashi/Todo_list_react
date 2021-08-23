@@ -2,6 +2,7 @@ import React from 'react';
 
 class TodoItem extends React.Component {
 	render() {
+    const { completed, id, title } = this.props.todo
 		const completedStyle = {
 			fontStyle: 'italic',
 			color: '#595959',
@@ -13,17 +14,17 @@ class TodoItem extends React.Component {
 				<input
 					type="checkbox"
 					className="checkbox"
-					checked={this.props.todo.completed}
+					checked={completed}
 					onChange={() => {
 						this.props.handleFromTodosList(
-							this.props.todo.id
+							id
 						);
 					}}
 				/>
 				<button
 					onClick={() => {
 						this.props.handleDeltodo(
-							this.props.todo.id
+							id
 						);
 					}}
 				>
@@ -31,12 +32,12 @@ class TodoItem extends React.Component {
 				</button>{' '}
 				<span
 					style={
-						this.props.todo.completed
+						completed
 							? completedStyle
 							: null
 					}
 				>
-					{this.props.todo.title}
+					{title}
 				</span>
 			</li>
 		);
