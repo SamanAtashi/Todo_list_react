@@ -22,8 +22,28 @@ class TodoContainer extends React.Component {
 		],
 	};
 
-	handleCheck = () => {
-		console.log('TodosList');
+	handleCheck = (id) => {
+		this.setState((prevState) => ({
+			todos: prevState.todos.map((todo) => {
+				if (todo.id === id) {
+					return {
+						...todo,
+						completed: !todo.completed,
+					};
+				}
+				return todo;
+			}),
+		}));
+	};
+
+	delTodo = (id) => {
+		this.setState({
+			todos: [
+				...this.state.todos.filter((todo) => {
+					return todo.id !== id;
+				}),
+			],
+		});
 	};
 
 	render() {
@@ -32,6 +52,7 @@ class TodoContainer extends React.Component {
 				<Header />
 				<TodosList
 					todos={this.state.todos}
+					delTodo={this.delTodo}
 					handleFromTodoContainer={
 						this.handleCheck
 					}

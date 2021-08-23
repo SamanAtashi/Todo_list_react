@@ -9,6 +9,7 @@ class TodosList extends Component {
 					<TodoItem
 						key={todo.id}
 						todo={todo}
+                        handleDeltodo={this.props.delTodo}
 						handleFromTodosList={
 							this.props
 								.handleFromTodoContainer
