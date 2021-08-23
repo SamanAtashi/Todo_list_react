@@ -94,6 +94,12 @@ h1 {
 	margin-right: 15px;
 }
 
+.textInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
+
 .item button {
 	font-size: 13px;
 	background: #f1f3f4;
