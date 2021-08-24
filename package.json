@@ -2,7 +2,7 @@
 	"name": "sth",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://github.com/SamanAtashi/Todo_list_react",
+	"homepage": "https://samanatashi.github.io/Todo_list_react/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.14.1",
 		"@testing-library/react": "^11.2.7",
