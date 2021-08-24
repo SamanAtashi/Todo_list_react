@@ -1,17 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import TodosList from './TodosList';
 import Header from './Header';
 import InputTodo from './InputTodo';
-
-// // after page loaded , we re-render from local-storage
-// componentDidMount() {
-// 	const storage = localStorage.getItem('todos');
-// 	const useStore = JSON.parse(storage);
-// 	if (useStore) {
-// 		this.setState({ todos: useStore });
-// 	}
-// }
 
 // // getting the present todos and storing them in the local storage
 // componentDidUpdate(prevProps, prevState) {
@@ -66,6 +57,20 @@ const TodoContainer = () => {
 			})
 		);
 	};
+
+	useEffect(() => {
+		// after page loaded , we re-render from local-storage
+		const storage = localStorage.getItem('todos');
+		const useStore = JSON.parse(storage);
+		if (useStore) {
+			setTodos(useStore);
+		}
+	}, [setTodos]);
+
+	useEffect(() => {
+		const temp = JSON.stringify(todos);
+		localStorage.setItem('todos', temp);
+	}, [todos]);
 
 	return (
 		<div className="container">
