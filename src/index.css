@@ -16,6 +16,10 @@ body {
 	height: 100vh;
 }
 
+li {
+	list-style: none;
+}
+
 h1 {
 	font-size: 6rem;
 	font-weight: 600;
@@ -24,6 +28,11 @@ h1 {
 	color: #ececec;
 	text-transform: lowercase;
 	text-align: center;
+}
+
+.link {
+	text-decoration: none;
+    color: gray;
 }
 
 .header {
@@ -95,19 +104,24 @@ h1 {
 }
 
 .textInput {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #dfdfdf;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #dfdfdf;
+}
+
+.active-link {
+	color: tomato;
+	text-decoration: underline;
 }
 
 .input-submit svg {
-  color: gray;
-  font-size: 1.5rem;
-  margin-top: 2px;
+	color: gray;
+	font-size: 1.5rem;
+	margin-top: 2px;
 }
 
 .input-submit svg:hover {
-  color: tomato;
+	color: tomato;
 }
 
 .item button {
