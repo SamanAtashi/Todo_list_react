@@ -13,7 +13,7 @@ class TodosList extends Component {
 						handleFromTodosList={
 							this.props.handleFromTodoContainer
 						}
-                        updateEditTodo={this.props.updateEditTodo}
+						updateEditTodo={this.props.updateEditTodo}
 					/>
 				))}
 			</ul>
