@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SamanAtashi/Todo_list_react/static/css/main.8d32b674.chunk.css",
+    "main.js": "/SamanAtashi/Todo_list_react/static/js/main.5564db2d.chunk.js",
+    "main.js.map": "/SamanAtashi/Todo_list_react/static/js/main.5564db2d.chunk.js.map",
+    "runtime-main.js": "/SamanAtashi/Todo_list_react/static/js/runtime-main.7efc3c47.js",
+    "runtime-main.js.map": "/SamanAtashi/Todo_list_react/static/js/runtime-main.7efc3c47.js.map",
+    "static/js/2.e75a3e1a.chunk.js": "/SamanAtashi/Todo_list_react/static/js/2.e75a3e1a.chunk.js",
+    "static/js/2.e75a3e1a.chunk.js.map": "/SamanAtashi/Todo_list_react/static/js/2.e75a3e1a.chunk.js.map",
+    "index.html": "/SamanAtashi/Todo_list_react/index.html",
+    "static/css/main.8d32b674.chunk.css.map": "/SamanAtashi/Todo_list_react/static/css/main.8d32b674.chunk.css.map",
+    "static/js/2.e75a3e1a.chunk.js.LICENSE.txt": "/SamanAtashi/Todo_list_react/static/js/2.e75a3e1a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7efc3c47.js",
+    "static/js/2.e75a3e1a.chunk.js",
+    "static/css/main.8d32b674.chunk.css",
+    "static/js/main.5564db2d.chunk.js"
+  ]
+}
