@@ -13,7 +13,7 @@ import InputTodo from './InputTodo';
 // }
 
 const TodoContainer = () => {
-	const [todos, setTodos] = useState([]);
+	const [todos, setTodos] = useState(getInitialTodos());
 
 	const handleCheck = (id) => {
 		setTodos((prevState) =>
@@ -58,14 +58,12 @@ const TodoContainer = () => {
 		);
 	};
 
-	useEffect(() => {
-		// after page loaded , we re-render from local-storage
-		const storage = localStorage.getItem('todos');
-		const useStore = JSON.parse(storage);
-		if (useStore) {
-			setTodos(useStore);
-		}
-	}, [setTodos]);
+	function getInitialTodos() {
+		// getting stored items
+		const temp = localStorage.getItem('todos');
+		const savedTodos = JSON.parse(temp);
+		return savedTodos || [];
+	}
 
 	useEffect(() => {
 		const temp = JSON.stringify(todos);
