@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const TodoItem = (props) => {
 	const [editing, setEditing] = useState(false);
@@ -30,6 +30,12 @@ const TodoItem = (props) => {
 		opacity: 0.4,
 		textDecoration: 'line-through',
 	};
+
+	useEffect(() => {
+		return () => {
+			console.log('Cleaning Up...');
+		};
+	},[]);
 
 	return (
 		<li className="item">
