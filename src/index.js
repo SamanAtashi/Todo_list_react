@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import TodoContainer from './functionBased/components/TodoContainer';
 
 ReactDOM.render(
